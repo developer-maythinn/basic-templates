@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #fafafa;
+}
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+a {
+  text-decoration: none;
+}
+.banner header {
+  width: 100%;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 15px;
+  z-index: 2;
+}
+.banner .logo {
+  padding-left: 20px;
+  font-size: 30px;
+  letter-spacing: 1px;
+  color: #fafafa;
+}
+.banner .nav-container {
+  display: flex;
+  list-style-type: none;
+  padding-right: 20px;
+}
+
+.banner ul li a {
+  padding: 16px;
+  color: #fafafa;
+  font-size: 20px;
+}
+.dropdown-container:hover .dropdown {
+  display: block;
+}
+.dropdown-container .fa-caret-down {
+  margin-left: 8px;
+}
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 45px;
+  list-style-type: none;
+  background-color: #fafafa;
+  color: rgba(0, 0, 0, 0.6);
+}
+.dropdown li {
+  margin: 10px;
+}
+
+.banner .banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.banner .content {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  right: 0;
+  bottom: 100px;
+  margin: auto;
+  height: 0;
+  z-index: 4;
+  max-width: 500px;
+  color: #fafafa;
+  text-align: center;
+  max-width: 600px;
+}
+.banner .content h1 {
+  font-weight: 500;
+  font-size: 40px;
+}
+.banner .content span {
+  font-weight: 600;
+  color: #e3e230;
+}
+.banner .content p {
+  font-size: 20px;
+}
+
+.btn {
+  padding: 8px 14px;
+  margin-top: 10px;
+  display: inline-block;
+  border-radius: 6px;
+  font-weight: bold;
+}
+.banner .content .learn-more {
+  color: #e3e230;
+  border: 1px double#fafafa;
+}
+.banner .content .learn-more:hover {
+  background-color: #e3e230;
+  color: rgba(0, 0, 0, 0.6);
+  transition: 1s;
+}
+@media (max-width: 768px) {
+  .banner .logo {
+    font-size: 25px;
+  }
+  .banner ul li a {
+    font-size: 16px;
+    padding: 10px;
+  }
+  .banner .content {
+    padding: 20px;
+  }
+  .banner .content h1 {
+    font-size: 25px;
+  }
+  .banner .content p {
+    font-size: 16px;
+  }
+}
+
+/* about */
+.about {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 50px;
+}
+
+.about img {
+  width: 50%;
+}
+.about-content {
+  padding: 0px 20px;
+  position: relative;
+}
+.all-heading {
+  text-align: center;
+  font-size: 30px;
+  margin: 10px;
+  text-align: center;
+}
+.about-content p {
+  text-indent: 50px;
+  line-height: 30px;
+}
+.about-container {
+  position: relative;
+}
+.about-container .quote-style {
+  position: absolute;
+  font-size: 5vw;
+  z-index: 1;
+  color: rgba(0, 0, 0, 0.5);
+}
+.about-container .fa-quote-left {
+  left: 20px;
+  top: -82px;
+}
+.about-container .fa-quote-right {
+  right: 30px;
+  bottom: -80px;
+}
+@media screen and (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    padding: 20px 0px;
+  }
+  .about img {
+    width: 100%;
+  }
+  .about-container .quote-style {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .about-container .quote-style {
+    display: none;
+  }
+  .about img {
+    width: 50%;
+  }
+  .about {
+    flex-direction: column;
+    padding: 20px 0px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1256px) {
+  .about-container .quote-style {
+    display: none;
+  }
+  .about img {
+    width: 40%;
+  }
+}
+
+/* Team */
+#team {
+  text-align: center;
+}
+.overline-style {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: overline #30d2e3;
+}
+#team-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 30px;
+}
+#team-container .card {
+  width: 100%;
+  padding: 20px;
+  max-height: 400px;
+  margin: 20px 20px;
+  background: linear-gradient(45deg, #e3e230, #30d2e3);
+  text-align: center;
+  overflow: hidden;
+}
+
+#team-container .card .img-container {
+  width: 100%;
+  height: 200px;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  overflow: hidden;
+}
+#team-container .card .img-container img {
+  width: 100%;
+  height: inherit;
+  transform: scale(1);
+  transition: 1s ease-in-out;
+  object-fit: cover;
+}
+#team-container .card .img-container:hover img {
+  transform: scale(1.3);
+}
+#team-container .card-content {
+  margin: 20px;
+}
+@media (max-width: 992px) {
+  #team-container {
+    flex-wrap: wrap;
+  }
+  #team-container .card {
+    width: 50%;
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  #team-container {
+    flex-wrap: wrap;
+  }
+  #team-container .card {
+    width: 100%;
+    height: auto;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2a2626;
+  color: #fafafa;
+  padding: 15px 50px;
+}
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .social a {
+  color: #fafafa;
+  width: 35px;
+  height: 35px;
+  font-size: 20px;
+  border-radius: 50%;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .social a:nth-child(1) {
+  background-color: #3b5998;
+}
+footer .social a:nth-child(2) {
+  background-color: #1da1f2;
+}
+footer .social a:nth-child(3) {
+  background-color: #784f99;
+}
+footer .social a:nth-child(4) {
+  background-color: #2578af;
+}
+
+footer .social a:hover {
+  color: #fff;
+}
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    padding-top: 30px;
+    padding-top: 30px;
+  }
+}
+
+#contact {
+  background-color: rgb(30 28 28);
+  width: 100%;
+  height: 85vh;
+  text-align: center;
+  color: #fafafa;
+  margin: 50px 0px 0px;
+}
+#contact h2 {
+  padding: 30px 0px 20px;
+}
+#contact .contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact .contact-form :not(input[type="button"]) {
+  width: 400px;
+}
+#contact .contact-form input,
+#contact .contact-form textarea {
+  display: block;
+  border: 0;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+#contact .contact-form input:focus,
+#contact .contact-form textarea:focus {
+  outline: 0;
+}
+@media (max-width: 768px) {
+  #contact .contact-form :not(input[type="button"]) {
+    width: 300px;
+    flex-basis: content;
+  }
+}

@@ -1,0 +1,314 @@
+* {
+  color: rgb(34, 56, 82, 0.9);
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+.main-section-bg {
+  background: #141e30; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #243b55,
+    #141e30
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #243b55,
+    #141e30
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position: relative;
+}
+.main-section-bg h3 {
+  color: #fff;
+}
+h1 {
+  color: #bdfff3;
+
+  /* color: -webkit-linear-gradient(to right, #4ac29a, #bdfff3); 
+        color: linear-gradient(to right, #4ac29a, #bdfff3);  */
+}
+
+.main-section-grid {
+  margin-bottom: 6.2rem;
+}
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+.cover-container {
+  max-width: 72em;
+}
+.bg-img {
+  width: 450px;
+  height: 350px;
+  background: #4ac29a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #4ac29a,
+    #bdfff3
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4ac29a,
+    #bdfff3
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 30% 70% 37% 63% / 33% 33% 67% 67%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-style {
+  font-size: 10em;
+  position: absolute;
+  top: 24%;
+}
+.custom-shape-divider-bottom-1635320264 {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  padding: 0;
+}
+
+.custom-shape-divider-bottom-1635320264 svg {
+  position: relative;
+  display: block;
+  width: calc(189% + 1.3px);
+  height: 172px;
+}
+
+.custom-shape-divider-bottom-1635320264 .shape-fill {
+  fill: #ffffff;
+}
+.para-style {
+  font-size: 16px;
+  color: #fff;
+}
+
+/* ************ icon card */
+.card-container {
+  background: url("https://images.pexels.com/photos/347141/pexels-photo-347141.jpeg?cs=srgb&dl=pexels-tirachard-kumtanom-347141.jpg&fm=jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-box {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  /* background: #fff; */
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+
+  transition: all 0.3s ease-in-out;
+  border-radius: 15px;
+  text-align: center;
+  border-bottom: 3px solid #fff;
+  backdrop-filter: blur(0.8rem);
+}
+.icon-box {
+  font-size: 3em;
+}
+
+.icon-box .bxl-dribbble {
+  color: #ff689b;
+}
+.icon-box .bx-file {
+  color: #3fcdc7;
+}
+.icon-box .bx-tachometer {
+  color: #fdd155;
+}
+.icon-box .bx-world {
+  color: #2282ff;
+}
+.card-container .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+.card-container p {
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+/* ************* feature tab ************ */
+.feature .custom-tab-items img {
+  max-height: 300px;
+  object-fit: cover;
+  margin: 0 auto;
+  display: flex;
+}
+.feature h4 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.feature p {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.feature .nav-pills .nav-link {
+  padding: 14px;
+}
+.feature .nav-pills .nav-link.active {
+  background-color: #fff;
+  box-shadow: 0px 2px 15px rgb(0, 0, 0, 0.1);
+}
+.feature .nav-pills .nav-link.active h4,
+.feature .nav-pills .nav-link.active p:hover {
+  color: #4ac29a;
+}
+.feature h2 {
+  margin-top: -35px;
+  z-index: 1;
+}
+
+/* ************* carousel ************* */
+.owl-carousel img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+.custom-carousel-item {
+  height: 400px;
+  max-height: 500px;
+  margin: 0 10px;
+  position: relative;
+}
+.custom-carousel-item .img-wrapper {
+  background: linear-gradient(
+    45deg,
+    #fdd044 0%,
+    #fed350 53%,
+    #a2f1de 20%,
+    #74d8bb 100%
+  );
+  /* linear-gradient( 45deg, #1a293e 0%, #233a53 53%, #a2f1de 20%, #74d8bb 100% ); */
+  width: 100%;
+  height: 300px;
+}
+.custom-carousel-item .img-wrapper img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  position: absolute;
+  top: 33%;
+  z-index: 5;
+  outline: 2px solid pink;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.custom-carousel-item p {
+  padding: 30px;
+  position: absolute;
+  top: 169px;
+  z-index: 3;
+  background: #fff;
+  border-radius: 20%;
+  padding-top: 56px;
+  font-size: 14px;
+}
+
+footer {
+  background-color: #141e30;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+}
+footer a {
+  text-decoration: none;
+}
+footer p,
+footer i {
+  color: #fafafa;
+  margin-bottom: 0px;
+}
+footer .social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .social-icon a {
+  color: #fafafa;
+  width: 35px;
+  height: 35px;
+  background-color: green;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 20px;
+}
+footer .social-icon a:nth-child(1) {
+  background-color: #4267b2;
+}
+footer .social-icon a:nth-child(2) {
+  background-color: #1da1f2;
+}
+footer .social-icon a:nth-child(3) {
+  background-color: #784f99;
+}
+footer .social-icon a:nth-child(4) {
+  background-color: #2578af;
+}
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+  }
+  footer p {
+    padding-top: 10px;
+  }
+}
+
+.about {
+  height: 80vh;
+}
+.about img {
+  width: 300px;
+  height: auto;
+  position: relative;
+  z-index: 1;
+  transform: skewY(7deg);
+  border-radius: 20px;
+  border: 10px solid #52c6a0;
+  box-shadow: -10px 10px, -15px 10px 20px;
+  margin-top: -50px;
+}
+/* .about span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 20px solid red;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+} */
